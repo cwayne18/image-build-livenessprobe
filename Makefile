@@ -17,7 +17,7 @@ BUILD_META=-build$(shell date +%Y%m%d)
 TAG ?= ${GITHUB_ACTION_TAG}
 
 ifeq ($(TAG),)
-TAG := v2.19.0$(BUILD_META)
+TAG := v2.20.0$(BUILD_META)
 endif
 
 ifeq (,$(filter %$(BUILD_META),$(TAG)))
